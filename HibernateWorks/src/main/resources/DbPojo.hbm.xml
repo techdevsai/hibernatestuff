@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="hibernatework.DbPojo" table="Test_db">
+        <meta attribute="class-description">
+            This class contains the signin users detail.
+        </meta>
+        <id name="idTest_db" type="int" column="idTest_db_INT">
+            <generator class="native"/>
+        </id>
+
+
+        <property name="name" column="name" type="string"/>
+        <property name="password" column="password" type="string"/>
+        <property name="phone" column="phone" type="int"/>
+        <property name="datetime" column="datetime" type="datetime"/>
+    </class>
+
+</hibernate-mapping>
